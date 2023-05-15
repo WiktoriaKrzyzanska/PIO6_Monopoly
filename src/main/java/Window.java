@@ -2,14 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Window {
-    private String title;
-    private String gameName = "Moneyland";
     private static Window window = null;
     boolean resizeWindow = true;
     private Window(){}
     private void setWindow(){
         GraphicsDevice deviceSize = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-        this.title = gameName;
+        String title = "Money land";
         JFrame gameWindow = new JFrame(title);
         deviceSize.setFullScreenWindow(gameWindow);
         gameWindow.setResizable(resizeWindow);
