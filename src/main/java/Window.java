@@ -13,6 +13,9 @@ public class Window {
         gameWindow.setResizable(resizeWindow);
         gameWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        Menu menu = new Menu(gameWindow);
+        gameWindow.setVisible(true);
+
     }
     public static Window get(){
         if(Window.window == null){
